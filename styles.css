@@ -364,10 +364,36 @@ select {
 }
 
 .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   margin-top: 2rem;
   border-top: 1px solid rgba(226, 232, 240, 0.15);
   padding-top: 1.5rem;
   color: #94a3b8;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-socials a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.65rem 1.25rem;
+  background: rgba(226, 232, 240, 0.1);
+  border-radius: 999px;
+  color: #e2e8f0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background: rgba(226, 232, 240, 0.25);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 1024px) {
